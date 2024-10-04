@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Objetos - El Señor de los Anillos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/objetos.css" />
+  <link rel="icon" type="image/png" href="/img/ring.png">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="img/ring.png" alt="Logo El Señor de los Anillos" />
+      </div>
+      <div class="title">
+        <h1><a href="index.html">Historia de la Tierra Media</a></h1>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="historias.html">Historias</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="batallas.html">Batallas</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+        <li><a href="objetos.html">Objetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de Objetos -->
+  <section id="objetos">
+    <h2>Objetos</h2>
+    <p>Explora los objetos mágicos y poderosos de la saga.</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="img/anillo-unico2.png" alt="La Comarca" />
+        <p>Anillo Único</p>
+        <div class="contenido-mas">
+          <p>
+            Forjado por Sauron, El Anillo Único domina todos los demás Anillos de Poder, otorgando control y corrupción.
+            Es el objeto más crucial y temido de la saga.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/anduril.png" alt="Rivendel" />
+        <p>Anduril</p>
+        <div class="contenido-mas">
+          <p>
+            La "Llama del Oeste", Andúril es la espada reforjada a partir de los fragmentos de Narsil, simbolizando la
+            restauración de la realeza.
+            Empuñada por Aragorn, es un emblema de esperanza y poder.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/narsil.png" alt="Lothlórien" />
+        <p>Narsil</p>
+        <div class="contenido-mas">
+          <p>
+            La espada de Elendil, Narsil se rompió en la batalla contra Sauron, pero sus fragmentos fueron reforjados en
+            Andúril.
+            Representa la resistencia y el legado de la lucha contra la oscuridad.
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/baston gandalf.jpg" alt="Gondor" />
+        <p>Baston de Gandalf el gris</p>
+        <div class="contenido-mas">
+          <p>
+            Símbolo del poder y sabiduría de Gandalf, su bastón es esencial para sus habilidades mágicas y liderazgo.
+            Representa tanto su autoridad como su destreza en la magia.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/earendil.png" alt="Rohan" />
+        <p>Luz de Eärendil</p>
+        <div class="contenido-mas">
+          <p>
+            Este frasco contiene la luz de la estrella Eärendil y fue dado a Frodo por Galadriel.
+            Brilla con esperanza en la oscuridad y guía a sus portadores en tiempos de necesidad.
+
+
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/sting-frodo.jpg" alt="Mordor" />
+        <p>Sting la espada élfica</p>
+        <div class="contenido-mas">
+          <p>
+            La espada élfica que brilla cerca de Orcos, originalmente de Bilbo y luego de Frodo.
+            Es un arma de valentía y un símbolo de coraje en la lucha contra el mal.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/arco-legolas.jpg" alt="Isengard" />
+        <p>Arco Legolas</p>
+        <div class="contenido-mas">
+          <p>
+            El elegante arco de Legolas es ligero y preciso, manejado con maestría por el elfo.
+            Es una extensión de su habilidad en el combate y la caza.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/cuerno-bormir.jpg" alt="Moria" />
+        <p>Cuerno Bormir</p>
+        <div class="contenido-mas">
+          <p>
+            El cuerno de Boromir, símbolo de su nobleza, tiene el poder de llamar a la ayuda en momentos de crisis.
+            Representa su linaje y valentía en la batalla.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="img/hacha.jpg" alt="Hacha Gimli" />
+        <p>Hacha Gimli</p>
+        <div class="contenido-mas">
+          <p>
+            Esta robusta hacha es la compañera fiel del enano Gimli.
+            Forjada con maestría en las profundidades de Erebor,
+            simboliza la fuerza y el coraje en la batalla, características distintivas de su portador.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/hoja-arwen.jpg" alt="Hoja Arwen" />
+        <p>Hoja de Lothlórien</p>
+        <div class="contenido-mas">
+          <p>
+            Es un pequeño broche verde, generalmente con forma de hoja, que se usa para sujetar las capas. 
+            Estas hojas son ornamentales y también tienen propiedades mágicas que protegen a los portadores.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-sawn"></i>
+        </button>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/espada-elrond.jpg" alt="Espada Elrond" />
+        <p>Espada Elrond</p>
+        <div class="contenido-mas">
+          <p>
+            La espada de Elrond, heredada de la primera Edad, es una reliquia de gran poder.
+            Representa la sabiduría y el liderazgo del Señor de Rivendel, así como su compromiso con la lucha contra el
+            mal.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/baston gandalf-blanco.jpg" alt="Bastón Gandalf el Blanco" />
+        <p>Bastón Gandalf el Blanco</p>
+        <div class="contenido-mas">
+          <p>
+            El bastón de Gandalf el Blanco es un canal de su poder como Istari.
+            Este bastón es más que un simple apoyo; es un símbolo de su sabiduría, de
+            poder y guía para todos aquellos que luchan contra las fuerzas oscuras.
+          </p>
+        </div>
+        <button class="ver-mas" onclick="toggleTexto(this)">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <!-- Flecha hacia arriba -->
+    <div id="back-to-top">
+      <a href="#" title="Volver al principio">&#8679;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 El Señor de los Anillos. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="https://github.com/JoanValorr" target="_blank"><img class="social-icon" src="img/github.png"
+          alt="GitHub" /></a>
+      <a href="https://x.com/Joannnn_04" target="_blank"><img class="social-icon" src="img/twitter.png"
+          alt="Twitter" /></a>
+      <a href="https://www.instagram.com/joan_valor/" target="_blank"><img class="social-icon" src="img/ig.png"
+          alt="Instagram" /></a>
+    </div>
+  </footer>
+
+  <script src="js/objetos-script.js">  </script>
+
+
+</body>
+
+</html>

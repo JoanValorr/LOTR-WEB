@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batallas - El Señor de los Anillos</title>
+    <link rel="stylesheet" href="css/batallas.css">
+    <link rel="icon" type="image/png" href="/img/ring.png">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="img/ring.png" alt="Logo El Señor de los Anillos">
+        </div>
+        <div class="title">
+            <h1><a href="index.html">Historia de la Tierra Media</a></h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="historias.html">Historias</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="batallas.html">Batallas</a></li>
+            <li><a href="idiomas.html">Idiomas</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+            <li><a href="objetos.html">Objetos</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Sección de Batallas -->
+    <section id="batallas">
+        <h2>Batallas</h2>
+        <p>Aquí se mostrará una línea de tiempo y detalles de las batallas más importantes.</p>
+
+        <!-- Carrusel de Batallas -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Batalla 1: Fornost -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/fornost.jpg" alt="Batalla de Fornost">
+                        <h3>Batalla de Fornost</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla de Fornost</h3>
+                        <p>El fin del Reino de Angmar, cuando Gondor y los elfos derrotaron al Rey Brujo en las ruinas de Fornost.</p>
+                    </div>
+                </div>
+
+                <!-- Batalla 2: Dagorlad -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/Batalla de Dagorlad.jpg" alt="Batalla de Dagorlad">
+                        <h3>Batalla de Dagorlad</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla de Dagorlad</h3>
+                        <p>Ocurrió al final de la Segunda Edad, durante la guerra de la Última Alianza contra Sauron, en la Puerta Negra de Mordor.</p>
+                    </div>
+                </div>
+
+                <!-- Batalla 3: Los Cinco Ejércitos -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/Hobbit Batalla Cinco Ejercitos.jpg" alt="Batalla de los Cinco Ejércitos">
+                        <h3>Batalla de los Cinco Ejércitos</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla de los Cinco Ejércitos</h3>
+                        <p>Una batalla épica entre enanos, elfos, hombres, orcos y águilas, librada por la posesión del tesoro de Erebor.</p>
+                    </div>
+                </div>
+
+                <!-- Batalla 4: Abismo de Helm -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/abismo-helm.jpg" alt="Batalla del Abismo de Helm">
+                        <h3>Batalla del Abismo de Helm</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla del Abismo de Helm</h3>
+                        <p>Una gran victoria de Rohan contra las fuerzas de Saruman. Los rohirrim defendieron el Abismo de Helm de los Uruk-hai.</p>
+                    </div>
+                </div>
+
+                <!-- Batalla 5: Pelennor -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/CamposPelennor.jpg" alt="Batalla de los Campos del Pelennor">
+                        <h3>Batalla de los Campos del Pelennor</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla de los Campos del Pelennor</h3>
+                        <p>La mayor batalla de la Guerra del Anillo, donde los ejércitos de Gondor y Rohan derrotaron a Sauron frente a Minas Tirith.</p>
+                    </div>
+                </div>
+
+                <!-- Batalla 6: Puerta Negra -->
+                <div class="battle-card" onclick="flipCard(this)">
+                    <div class="card-front">
+                        <img src="img/puerta-negra.jpg" alt="Batalla de la Puerta Negra">
+                        <h3>Batalla de la Puerta Negra</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Batalla de la Puerta Negra</h3>
+                        <p>La batalla final de la Guerra del Anillo, donde el ejército de Gondor desafía a Sauron en la Puerta Negra de Mordor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top">
+            <a href="#" title="Volver al principio">&#8679;</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 El Señor de los Anillos. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="https://github.com/JoanValorr" target="_blank"><img class="social-icon" src="img/github.png" alt="GitHub"></a>
+            <a href="https://x.com/Joannnn_04" target="_blank"><img class="social-icon" src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/joan_valor/" target="_blank"><img class="social-icon" src="img/ig.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/batallas-script.js"></script>
+</body>
+</html>
