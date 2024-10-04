@@ -1,0 +1,252 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1c1c1c;
+    line-height: 1.6;
+    user-select: none;
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #f0c040;
+    --sb-size: 15px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 12px;
+    border: 1px solid #232E33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+        var(--sb-track-color);
+    }
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .title h1 {
+    font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
+    color: #fff; /* Color del texto para que contraste con el fondo */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+header .title h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .title h1 a:hover{
+    color: #f0c040;
+}
+
+/* Nav */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f0c040;
+}
+
+/* Sección de Objetos */
+#objetos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#objetos h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#objetos p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.gallery-item {
+    
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    width: 350px;
+    text-align: center; 
+    position: relative;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px); /* Levanta el elemento al pasar el mouse */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    margin-top: 35px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #f0c040; /* Color de texto */
+}
+
+.gallery-item a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 2px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.gallery-item a:hover {
+    background-size: 100% 2px;
+}
+
+/* Estilo del botón "ver más" */
+.ver-mas {
+    background-color: #f0c040;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* Hacer el botón redondo */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: justify;
+    position: relative;
+    margin: 20px auto; /* Centrar el botón horizontalmente */
+    z-index: 1; /* Asegura que el botón esté sobre la línea */
+  }
+  
+  /* Icono dentro del botón */
+  .ver-mas i {
+    font-size: 16px;
+    transition: transform 0.3s ease; /* Transición para la rotación de la flecha */
+  }
+  
+  /* Cambio de color al hacer hover */
+  .ver-mas:hover {
+    background-color: #f0c040; /* Cambia el color al hacer hover */
+  }
+  
+  /* Contenido adicional (expansión) */
+  .contenido-mas {
+    display: none;
+    margin-top: 15px;
+    font-size: 10px; 
+    text-align: justify;/* Espacio entre el contenido y el botón */
+  }
+
+/* Flecha hacia arriba */
+#back-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #f0c040; 
+    color: rgb(0, 0, 0); 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#back-to-top a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+#back-to-top:hover {
+    background-color: #555; 
+    transform: scale(1.1);
+}
+
+#back-to-top:hover a {
+    color: #fff; 
+}
+/* Footer */
+footer {
+    background-color: #504f4f;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+}
+

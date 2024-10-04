@@ -1,0 +1,228 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1c1c1c;
+    line-height: 1.6;
+    user-select: none;
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #f0c040;
+    --sb-size: 15px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 12px;
+    border: 1px solid #232E33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+    position: relative; /* Asegúrate de que el menú esté sobre las imágenes laterales */
+    z-index: 10; /* Mayor que el z-index de las imágenes laterales */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .title h1 {
+    font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
+    color: #fff; /* Color del texto para que contraste con el fondo */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+header .title h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .title h1 a:hover {
+    color: #f0c040;
+}
+
+/* Nav */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f0c040;
+}
+
+/* Sección de Personajes */
+#personajes {
+    padding: 50px 20px;
+    text-align: center;
+    padding-left: 120px; /* Ajuste para dar espacio a la imagen lateral izquierda */
+    padding-right: 120px; /* Ajuste para dar espacio a la imagen lateral derecha */
+}
+
+.personajes-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.personaje-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.5s ease;
+}
+
+.personaje-card img {
+    margin-top: 15px;
+    width: 20%;
+    border-bottom: 2px solid #f0c040;
+    transition: transform 0.5s ease;
+}
+
+.personaje-card h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.personaje-card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+}
+
+.personaje-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0c040;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.personaje-card .btn:hover {
+    background-color: #e0b030;
+}
+
+.scroll-zoom {
+    transform: scale(1.1); /* Ajusta el nivel de zoom según sea necesario */
+}
+
+/* Flecha hacia arriba */
+#back-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #f0c040; 
+    color: rgb(0, 0, 0); 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1000;
+}
+
+#back-to-top a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+#back-to-top:hover {
+    background-color: #555; 
+    transform: scale(1.1);
+}
+
+#back-to-top:hover a {
+    color: #fff; 
+}
+/* Footer */
+footer {
+    background-color: #504f4f;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+}
+
+/* Imagenes laterales */
+.side-image {
+    position: fixed;
+    top: 0;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Asegúrate de que las imágenes estén detrás del menú */
+    overflow: hidden; /* Asegura que no haya desplazamientos horizontales */
+}
+
+.side-image img {
+    height: 100%; /* Asegura que la imagen ocupe el alto del contenedor */
+    width: 300px; /* Mantiene la proporción original de la imagen */
+}
+
+.side-image.left {
+    left: 0;
+}
+
+.side-image.right {
+    right: 0;
+}
